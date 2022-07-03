@@ -1,22 +1,24 @@
 ## niconico cron
+エコノミー制限を回避して，ダウンロード
 
+## 環境
+Linuxのcrontabでの動作を想定
 
-## ビルド環境
-
-| name          | version    |
-|---------------|------------|
-| python        | 3.8.12     |
-| opencv-python | 4.5.5.62   |
-| freetype      | 2.11.1     |
-| harfbuzz      | 3.2.0      |
-| vcpkg         | 2022.02.23 |
- | scikit-build | 0.13.1     |
-
-
+| name         | version   |
+|--------------|-----------|
+| python       | 3.8.13    |
+| yt-dlp       | 2022.6.29 |
+| pyinstaller  | 5.1       |
 ---------------------------
 
+
+## 実行方法
+
+1. アプリをビルド
+2. crontabに登録
+
 ## Build
+`shell/build_win.bat`
 
-`git clone https://github.com/OhkuboSGMS/opencv-python-freetype2`
-
-`build.bat`
+## crontab
+ // NOT YET
