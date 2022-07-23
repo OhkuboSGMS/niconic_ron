@@ -25,7 +25,7 @@ source
  `crontab`に以下の命令を追記
 
 ```
-01 2 * * * ~/bin/niconicron/main --flie_list  ~/list.txt
+01 2 * * * ~/bin/niconicron/main --file_list  ~/list.txt
 ```
 毎日02:01に ~/list.txtのファイルをダウンロード
 
