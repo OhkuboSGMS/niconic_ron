@@ -1,4 +1,4 @@
-conda create -n niconicron  -y
+conda create -n niconicron python=3.6.6  -y
 source activate niconicron
 pip install yt-dlp pyinstaller loguru
 
