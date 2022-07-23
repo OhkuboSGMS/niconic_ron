@@ -30,13 +30,13 @@ def write_list(url_list: List[str], file_path: str) -> bool:
 SUCCESS_CODE = 0
 
 
-def main(file_path: str):
+def main(file_path: str, output_dir: str):
     log_file()
     logger.info('Start download')
     logger.info(f'Read url list from :{file_path}')
     url_list = read_list(file_path)
     rest_url = []
-    option = {'paths': {'home': 'nc'}}
+    option = {'paths': {'home': output_dir}}
     """
     if not download movie keep url to list.txt
     """
@@ -59,7 +59,8 @@ def main(file_path: str):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--file_list', default='list.txt', type=str)
+    parser.add_argument('--output_dir', default='nc', type=str, help='download file dir')
+    parser.add_argument('--file_list', default='list.txt', type=str, help='file of url list')
     arg = parser.parse_args()
 
-    main(arg.file_list)
+    main(arg.file_list, arg.output_dir)
