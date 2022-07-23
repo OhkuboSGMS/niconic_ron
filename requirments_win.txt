@@ -11,3 +11,4 @@ pywin32-ctypes==0.2.0
 websockets==10.3
 wincertstore==0.2
 yt-dlp==2022.6.29
+loguru==0.6.0
