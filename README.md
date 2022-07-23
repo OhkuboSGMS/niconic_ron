@@ -19,7 +19,7 @@ bash Berryconda3-2.0.0-Linux-armv7l.sh
 source 
 ```
 ## Build
-`shell/build_raspi3.sh`
+`bash shell/build_raspi3.sh`
 
 ## 定期実行
  `crontab`に以下の命令を追記
